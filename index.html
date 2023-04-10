@@ -7,23 +7,26 @@
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    
 </head>
 <body>
-    <h1>Check your BMI</h1>
-    <h3>Enter your weight and height below to check your BMI results</h3>
-    <div class="calculator"></div>
-    <p>Put your height in here (Kg)
-        <input type="text" id="height">
-        <br><span id="height_error"></span>
-    </p>
-
-    <p>and your weight in here (Cm)
-    <input type="text" id="weight">
-    <br><span id="weight_error"></span>
-    </p>
-
-    <button id="btn">Calculate</button>
+    <div class="title">
+    <h1 align="center">Check Your BMI</h1>
+    <h3 align="center">Enter your weight and height below to check your BMI results</h3>
+    </div>
+    <div class="calculator">
+    <p for="weight">Put your weight in here (Kg)</p>
+    <input id="weight" type="numbers"></br>
+    <p for="height">and your height in here (Cm)</p>
+    <input id="height" type="numbers"></br>
+    <h4 id="heading"></h4>
     <p id="output"></p>
+    <p id="message"></p>
+    <a href="#" class="btn" onclick="calculate()">Calculate</a>
+    <a href="#" class="btn" onclick="reset()">Reset</a>
+
+</div>
+    
     
 </body>
 </html>
